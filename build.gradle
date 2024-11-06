@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.selenium'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.10.2'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+}
+
+tasks.named('test') {
+    // Use TestNG for unit tests.
+    useTestNG {
+        suites 'src/test/resources/testng.xml'
+        outputDirectory = file("test-output")
+        useDefaultListeners = true
+    }
+}
