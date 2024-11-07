@@ -13,6 +13,11 @@ public class HomePage {
         this.driver = driver;
     }
 
+    public String getHomeMenuText(){
+        WebElement homeMenuLocator = findElements.ByXPath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[1]/a");
+        return homeMenuLocator.getText();
+    }
+
     public static synchronized HomePage getInstance(WebDriver driver) {
         if (homePageInstance == null) {
             homePageInstance = new HomePage(driver);
