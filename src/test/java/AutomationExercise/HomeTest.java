@@ -76,4 +76,11 @@ public class HomeTest extends BaseTest{
         int expected = 3;
         Assert.assertEquals(actual,expected);
     }
+
+    @Test
+    public void verifyEightItemsInBrands(){
+        int actual = homePage.getCountOfBrands();
+        int expected = 8;
+        Assert.assertEquals(actual,expected);
+    }
 }
