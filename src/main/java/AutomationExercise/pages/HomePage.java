@@ -71,6 +71,11 @@ public class HomePage {
         return categories.size();
     }
 
+    public int getCountOfBrands(){
+        List<WebElement> brands = driver.findElements(By.xpath("//div[@class='brands-name']//ul[@class='nav nav-pills nav-stacked']/li"));
+        return brands.size();
+    }
+
 
     public String homePage(){
         driver.get("https://automationexercise.com");
