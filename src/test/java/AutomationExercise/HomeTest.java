@@ -48,4 +48,11 @@ public class HomeTest extends BaseTest{
         String Expected = "API Testing";
         Assert.assertEquals(Actual,Expected);
     }
+
+    @Test
+    public void verifyMenuOptions_VideoTutorials(){
+        String Actual = homePage.getVideoTutorialsMenuText();
+        String Expected = "Video Tutorials";
+        Assert.assertEquals(Actual,Expected);
+    }
 }
