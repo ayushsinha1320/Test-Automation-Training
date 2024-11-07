@@ -48,6 +48,11 @@ public class HomePage {
         return element.getText();
     }
 
+    public String getContactUsMenuText(){
+        WebElement element = findElements.ByXPath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[8]/a");
+        return element.getText();
+    }
+
     public static synchronized HomePage getInstance(WebDriver driver) {
         if (homePageInstance == null) {
             homePageInstance = new HomePage(driver);
