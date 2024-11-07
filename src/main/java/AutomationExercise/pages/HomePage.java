@@ -66,6 +66,11 @@ public class HomePage {
         return slides.size();
     }
 
+    public int getCountOfCategoriesElement(){
+        List<WebElement> categories = driver.findElements(By.cssSelector(".panel-group .panel.panel-default"));
+        return categories.size();
+    }
+
 
     public String homePage(){
         driver.get("https://automationexercise.com");
