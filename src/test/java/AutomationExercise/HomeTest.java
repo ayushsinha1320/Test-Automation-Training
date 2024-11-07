@@ -62,4 +62,11 @@ public class HomeTest extends BaseTest{
         String Expected = "Contact us";
         Assert.assertEquals(Actual,Expected);
     }
+
+    @Test
+    public void verifyThreeItemsInCarousel(){
+        int actual = homePage.getCountOfCarouselElement();
+        int expected = 3;
+        Assert.assertEquals(actual,expected);
+    }
 }
