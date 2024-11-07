@@ -83,4 +83,9 @@ public class HomeTest extends BaseTest{
         int expected = 8;
         Assert.assertEquals(actual,expected);
     }
+
+    @Test
+    public void checkSubscription(){
+        homePage.checkSubscription();
+    }
 }

@@ -76,6 +76,11 @@ public class HomePage {
         return brands.size();
     }
 
+    public void checkSubscription(){
+        WebElement textBox = findElements.ByID("susbscribe_email");
+        WebElement submit = findElements.ByID("subscribe");
+    }
+
 
     public String homePage(){
         driver.get("https://automationexercise.com");
