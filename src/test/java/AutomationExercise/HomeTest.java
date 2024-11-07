@@ -13,4 +13,11 @@ public class HomeTest extends BaseTest{
         String Expected = "Home";
         Assert.assertEquals(Actual,Expected);
     }
+
+    @Test
+    public void verifyMenuOptions_Products(){
+        String Actual = homePage.getProductsMenuText();
+        String Expected = "Products";
+        Assert.assertEquals(Actual,Expected);
+    }
 }
