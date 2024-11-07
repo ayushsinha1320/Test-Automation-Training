@@ -55,4 +55,11 @@ public class HomeTest extends BaseTest{
         String Expected = "Video Tutorials";
         Assert.assertEquals(Actual,Expected);
     }
+
+    @Test
+    public void verifyMenuOptions_ContactUs(){
+        String Actual = homePage.getContactUsMenuText();
+        String Expected = "Contact us";
+        Assert.assertEquals(Actual,Expected);
+    }
 }
