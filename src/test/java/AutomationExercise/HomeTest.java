@@ -20,4 +20,12 @@ public class HomeTest extends BaseTest{
         String Expected = "Products";
         Assert.assertEquals(Actual,Expected);
     }
+
+    @Test
+    public void verifyMenuOptions_Cart(){
+        String Actual = homePage.getCartsMenuText();
+        String Expected = "Cart";
+        Assert.assertEquals(Actual,Expected);
+    }
+
 }
