@@ -20,7 +20,7 @@ public class HomePage {
 
     public String getProductsMenuText(){
         WebElement element = findElements.ByXPath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[2]/a");
-        return element.getText();
+        return element.getText().split(" ", 2)[1];
     }
 
     public String getCartsMenuText(){
