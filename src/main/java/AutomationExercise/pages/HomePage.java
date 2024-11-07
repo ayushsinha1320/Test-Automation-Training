@@ -18,6 +18,11 @@ public class HomePage {
         return homeMenuLocator.getText();
     }
 
+    public String getProductsMenuText(){
+        WebElement element = findElements.ByXPath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[2]/a");
+        return element.getText();
+    }
+
     public static synchronized HomePage getInstance(WebDriver driver) {
         if (homePageInstance == null) {
             homePageInstance = new HomePage(driver);
