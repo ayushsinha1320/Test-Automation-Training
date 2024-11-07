@@ -34,4 +34,11 @@ public class HomeTest extends BaseTest{
         String Expected = "Signup / Login";
         Assert.assertEquals(Actual,Expected);
     }
+
+    @Test
+    public void verifyMenuOptions_TestCases(){
+        String Actual = homePage.getTestCasesMenuText();
+        String Expected = "Test Cases";
+        Assert.assertEquals(Actual,Expected);
+    }
 }
